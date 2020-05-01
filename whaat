@@ -1,14 +1,20 @@
 #include <stdio.h>
 
-longint factorial(int variebo);
+unsigned long long int factorial(unsigned long long int variebo);
 
 int main(void){
-  longint wan, tuu, thrii;
-  longint fact =1;
-  
-  printf ("%i", factorial (wan));
-  printf ("%i", factorial (tuu));
-  printf ("%i", factorial (thrii));
+  unsigned long long int wan, tuu, thrii;
+ 
+  printf ("%lu", factorial (wan));
+  printf ("%lu", factorial (tuu));
+  printf ("%lu", factorial (thrii));
   
   return 0;
+}
+
+unsigned long long int factorial(unsigned long long int variebo){
+    unsigned long long int fact =1;
+    
+    fact = fact * factorial (variebo - 1);
+    return fact;
 }
