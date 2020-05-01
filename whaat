@@ -1,8 +1,14 @@
 #include <stdio.h>
 
+longint factorial(int variebo);
+
 int main(void){
   longint wan, tuu, thrii;
   longint fact =1;
   
+  printf ("%i", factorial (wan));
+  printf ("%i", factorial (tuu));
+  printf ("%i", factorial (thrii));
   
+  return 0;
 }
