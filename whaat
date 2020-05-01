@@ -1,3 +1,8 @@
 #include <stdio.h>
 
-intmain(void){}
+int main(void){
+  longint wan, tuu, thrii;
+  longint fact =1;
+  
+  
+}
